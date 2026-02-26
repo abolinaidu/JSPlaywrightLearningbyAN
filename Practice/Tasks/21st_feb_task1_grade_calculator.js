@@ -1,6 +1,6 @@
 // Grade calculator
 
-let marks =95;
+let marks = 95;
 let grade;
 
 if (marks >=90 && marks<= 100) {
