@@ -1,0 +1,22 @@
+/*Exercise 1 : API Response Validation
+You receive an array of API response codes. Write code to:
+Check if ALL responses are successful (200–299)
+Find the FIRST non-success code
+Return all unique error codes
+let responses = [200, 201, 404, 500, 404, 200, 503];
+*/
+
+let responses = [200, 201, 404, 500, 404, 200, 503];
+
+// 1. Check if ALL responses are successful (200–299)
+let result = [200, 201, 404, 500, 404, 200, 503].every(s => s >= 200 && s <= 299);
+console.log("Are responses successfull? ",result);
+
+//Find first nonsucesscode
+let result1 =[200, 201, 404, 500, 404, 200, 503].find(a => a <200 || a > 299);
+console.log("The first non sucesscode is :",result1);
+
+//Return all unique error codes
+
+let result2 =[...new Set([200, 201, 404, 500, 404, 200, 503].filter(b => b < 200 || b > 299))];
+console.log("The unique error codes are:", result2);
