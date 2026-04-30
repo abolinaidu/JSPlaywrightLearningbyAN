@@ -1,23 +1,18 @@
-/* Pyramid pattern in Javascript
-    *
-  *   *
- *  *  *
-*  *  *  *
-*  *  *  * *
-*/
+//Upper Pyramid Triangle
+let n=5;
+console.log("Upper Pyramid Triangle ");
+for (let i = 1; i <= n; i++) 
+    {
+  console.log(" ".repeat(n - i) + "*".repeat(2 * i - 1));
+}
 
-//need to check
 
-let rows = 5;
-let i=1;
- for (i = 1; i <= rows; i++) {
-            // Print spaces before the stars
-            for (let j = 1; j <= rows - i; j++) {
-               console.log("  ");
-            }
-           // Print stars
-            for (let k = 1; k <= 2 * i - 1; k++) {
-                console.log("*".repeat(k));
-            }
-        }
-    
+//Lower Pyramid Triangle
+
+let n1=5;
+console.log("Lower Pyramid Triangle ");
+
+for (let j=n1-1;j>=1;j--)
+{
+    console.log(" ".repeat(n1-j)+"*".repeat(2*j-1));
+}
